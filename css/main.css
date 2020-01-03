@@ -1,140 +1,14 @@
-@import url(//fonts.googleapis.com/css?family=Open+Sans);
 
 html {
   scroll-behavior: smooth;
 }
 
-.demo-test {
-  background-color: black;
-}
-
-
-/* por hacer 
-
-- Cambiar fondo de Experiencias. 
-
-Arreglar Texto definitivo antes de acomodar las secciones. 
-Leer las notas en google keep de lo acerca de como ordenar el resumen para poder colocarlo bien. 
-
-arreglar la resolucion y separacion de secciones en la resolucion del ihpone en general. 
-type en ihpone no reconocido. ver webkit. 
-
-arreglar margin up en experiences para aue tenga espacio esa seccion cuando se reduce el puerto. 
-
-poner la flecha anuimada hacia abajo. 
-
-publicar en github bajo mi dominio scarpantonio.com
-
-arreglar SEO
-
-
-
-asi como pequenos errores en cada seccion dependiendo de resolucion. 
-recordar que antes de pulir todo al extremo tenemos que terminar de agregar la info real que la pagina
-va a tener. 
-
-recordar practicar como crear un hamburger menu que funcione. 
-
- */
-
-
-/* test menu 2 */
-
-.menu-2 {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  position: fixed;
-  background-color: black;
-  bottom: 0;
-  width: 100%;
-}
-
-.menu-2 > a {
-  color:white;
-  font-size: 10px;
-  padding: 10px;
-  font-weight: lighter;
-}
-
-.e-phrase {
-  text-align: center;
-  font-size: 21px;
-  font-weight: lighter;
-}
-
-/* Big sectio info */
-#f-phrase {
-  /* margin-top: 20px; */
-  font-size: 21px;
-  grid-column: 1/5;   
-}
-
-.contact-info {
-  padding-top: 40px;
-  background-color: black;
-  height: 100vh;
-  color: white;
-}  
-
-#c-background {
-  font-size: 54px;
-  color: white;
-}
-
-
-/* hr dedicada a abrir espacio entre abiilties y section 2 */
-.extra-space  {
-  margin: 90px;
-}
-
-.abilities {
-  /* background-color: black; */
-}
-
-/* out of the grid */
-section#section-three .grid {
-  display: grid;
-  grid-template-columns: 3fr 1fr;
-  /* grid-template-rows: auto;  */
-  margin: 2em;
-}
-
-.e-header {
-  grid-column: 1/3;
-}
-
-.a-title {
-  grid-column: 1/3;  
-}
-
-.skills-title{
-  grid-column: 1/3;  
-  color: #4b8c8d;
-  padding-bottom: 5px;
-  padding-top: 20px;
-}
-
-.ability-title {
-  font-weight: lighter;
-}
-.ability-score {
-  padding-top: 10px;
-}
-    
 * {
-  padding: 0;
-  font-family: 'open sans';
-  /* font-family: 'Montserrat', sans-serif; */
-}
-@import url("https://fonts.googleapis.com/css?family=Anton|Oswald");
-
-
-body {
   margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
 }
 
-/* toolbar styling */
 ::-webkit-scrollbar {
   width: 24px;
 }
@@ -153,571 +27,559 @@ body {
   -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
 }
 
-/* styling para las tablas */
-table {
-  line-height: 30px;
-}
-
-nav, .menu {
-  position: fixed;  
-  writing-mode: vertical-lr;
-  color:white;
-  z-index: initial;
-  padding: 20px;
-  margin-right: 10px;
-  font-family: 'Montserrat', sans-serif; 
-}
-
-a:link {
+.menu-wrapper {
+  color: red;
+  font-family: helvetica;
   text-decoration: none;
+  text-transform: uppercase;
 }
 
- a, .menu {
-   padding: 30px;
-   font-size: 12px;
+.fas {
+  font-size: 12px;
+  margin-right: 5px;
+  margin
 }
 
-section {
-  margin-top: -0.6em;
+.date, .grid-p {
+  color: #4b8e8d;
 }
 
-header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  text-align: center;
-  min-height: 100vh;
-  width: 100%;
-  background-color: black;
-  color: white;
-}
-
-/* algo esta pasando con el color que no cambia */
-
-hr {
-  max-width: 700px;
-  margin-top: 20px;
-  margin-bottom: 30px;
-}
-
-header h1 {
-  font-size: 63px;
-  margin: 0;
-  padding: 0;
-  font-weight: bolder;
-  /* font-family: 'Montserrat', sans-serif;  */
-}
-
-.h-subtitle {
-  font-size: 28px;
-  text-align: center;
-}
-
-
-
-/* color section 2 */
-section#section-two {
-  background-color: #f3efe0;
-  /* color for testing monitor */
-  /* background-color: green; */
-  /* color: white; */
-  } 
-
-/* este es el color del background de la seccion uno */
-section#section-one {
-  /* background: rgba(255, 153, 0, 0.8);
-  background: linear-gradient(
-    150deg,
-    rgba(255, 153, 0, 0.8),
-    rgba(255, 245, 0, 0.7)
-  ); */
-}
-
- .p-title {
-   text-align: center;
-  font-size: 54px;
- }
- .p-subtitles {
-  font-size: 24px;
-  margin-bottom: 10px; 
-  text-align: center;
- }
- 
- .p-description {
-  font-size: 15px;
-  text-align: center;
- }
-
- .front-end {
-   font-size: 21px;
-  text-align: center;
- }
-
- /* Espaciado letra en profile */
- .s1-b {
-   line-height: 10px;
- }
- 
-
- .p-phrase {
-  text-align: center;
- }
-
-.d-titles {
-text-align: center;
-font-weight: bolder;
- }
-
-
- 
- 
-
- /* columna singular que se adapta a todas las resoluciones  adaptaciones genrales*/
- @media only screen and (max-width: 973px) {
-  
-/* header */
-
-.d-titles {
- text-align: center;
-font-weight: bolder;
-}
-
-  /* profile */
-.s1-a {
-  grid-row: 1/2;
-}
-
-/* details */
-.s1-b {
-  
-}
-
-/* about me */
-.s1-c {
-  grid-row: 2/3;
-  
-}
-/* img */
-.s1-d {
-  grid-row: 3/4;
-}
-
-section#section-one .grid {
-    display: grid;
-    grid-template-columns: 1fr ;
-    grid-template-rows: 0.5fr 0.4fr 0.1fr 0.2fr 1fr;
-    margin: 2em;
-    grid-gap: 1em;
-  }
-
-  .p-subtitles {
-    text-align: center;
-  }
-
-  .p-description {
-    font-size: 15px;
-    line-height: 24px;
-    text-align: center;
-   }
-
-  .p-img {
-    width: 100%;
-    justify-items: center;
-    align-items: center;
-    padding-left: 70px;
-    padding-bottom: 50px;
-   } 
-
-  .p-phrase {
-    text-align: center;
-    line-height: 24px;
-  }
-  
-  .p-title {
-    text-align: center;
-   font-size: 44px;
-  }
-
-  .shut {
-    text-align: center;
-  }
-  img {
-    width: 50%;
-  }
-
-  .box {
-    padding: 20px;  
-  }  
-}
-
-@media only screen and (max-width:420px) { 
-
-  section#section-two {
-    font-size: 18px;
-    line-height: 35px;
-    padding-top: 10px;
-  }  
-  .menu-2 {
-    padding-bottom: 10px;
-  }
-    header {
-      min-height: 100vh; 
-      /* line-height: 50px; */
-    }
-     header h1 {
-      font-size: 36px;
-      line-height: 10px;
-    }  
-    .h-subtitle {
-      font-size: 28px;
-      line-height: 10px;
-    }
-  
-  }
-  
-/* iphone resolution ver limite Vh para que el "" se adapte a todas las resoluciones */
-
-@media only screen and (max-width:400px) {
-  .menu-2 {
-    padding-bottom: 10px;
-  }
-/*
-PROBLEMA-2
-header no se ajusta porque line-height fue utiliada en otros media. 
-Estudiar porque eso sucede. en Cross web compatibility. talve zun libro profundo de CSS nos ayude a entender
-mas de que se trata
-*/
-  header {
-    min-height: 100vh; 
-    /* line-height: 50px; */
-  }
-   header h1 {
-    font-size: 40px;
-    /* line-height: 10px; */
-  }  
-  .h-subtitle {
-    font-size: 24px;
-    /* en subititulo si funciono porque ne otras resoluciones no se lo habiamos agregado */
-    /* line-height: 10px; */
-  }
-
-/* SECTION TWO */
-
-section#section-two .grid {
+.location {
+  color: #4b8e8d
   padding-top: 10px;
 }
 
-/* ABIILTIES */
-.ability-score {
-  font-size: 9px;
-}
-/* cierre media */
-} 
 
-@media only screen and (min-width:960px){
-   .menu-2 {
-    display: none;
-  }
+.menu-wrapper {
+  font-size: 15px;
+  position: fixed;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
 }
-
-@media only screen and (max-width:960px){
-  nav, .menu {
-    display: none;
-  }
+.menu-wrapper a:hover {
+  text-decoration: underline;
 }
 
-/* ocultar nav */
-/* menu small screen */
-@media only screen and (max-width:775px){
-  
-  .hr-header {
-    display: none;
-  }
-  /* PROBLEMA */
-  /* 
-  buscar problema 2 para entender 
-  cuando activamos estea se dana la resolucion del ihpone. 
-  apenas tratamos de editar tamano se esconetan otras resoluciones
-  ver across web compatibiliyy
-  */
-header h1 {
-  /* font-size: 36px; */
-line-height: 60px;
-}
-  .h-subtitle {
-
-  }
-  
+.menu-wrapper a:active {
+  color: black;
 }
 
-@media only screen and (max-width:973px){
-  img {
-    width: 25%;
-  }
-  section#section-one .grid {
-    margin: 6em;
-  }
-  section#section-two .grid {
-    margin: 0.5em;
-    } 
+.menu-wrapper a:visited {
+  color: black;
 }
 
-.skills {
-  font-size: 24px;
-}
-
-@media only screen and (max-width:660px){
-  section#section-one .grid {
-    margin: 1em;
-  }
-  img {
-    width: 35%;
-  }
-}
-
-/* tablas */
-@media only screen and (min-width: 730px) {
-table {
-  margin: 3em;
-  }
-}
-
-/* tres columnas */
-@media only screen and (min-width: 973px) {
-
-/* acercad de contact info */
-
-.contact-info {
-  background-color: black;
-  height: 100vh;
+.icon-footer a:active {
   color: white;
-} 
-
-#f-phrase {
-  font-size: 21px;
-  grid-column: 1/5;   
 }
 
-.hr-header {
-width: 100%;
-}
-  
-.extra-space  {
-display: none;
+.icon-footer a:visited {
+  color: white;
 }
 
-/* transformacion de abilidades en dos columnas.  */
-section#section-three .grid {
-display: grid;
-grid-template-columns: 1.5fr 1fr 1.5fr 1fr;
-margin: 12em;
-  }
-  
-  /* no funciona */
-  section#section-four .grid {
-    background-color: black;
-    display: grid;
-    grid-template-columns:  1fr 1fr 1fr;
-    color: white;
-    padding: 40px;        
-  }
+/* All a have names. so the no name styling will apply for the rest */
 
+ a:active {
+  color: #4b8e8d;  
+}
+ a:visited {
+  color: #4b8e8d;  
+}
 
-  .a-title {
-    grid-column: 1/5;  
-  } 
+/* este seria el equivalente al body de la apgina */
 
-  .skills-title{
-   grid-column: 1/5;  
-  }
-
-/* aqui es donde deberia funcionar */
-
-  .box {
-   padding: 12px;
-  }
-  /* profile */
-  .s1-a {
-    grid-column: 1/4;
-  }
-  
-  /* details */
-  .s1-b {
-    grid-column: 3/4
-  }
-  
-  /* about me */
-  .s1-c {
-    grid-column: 1/2;
-    grid-row: 2/3;
-  }
-  
-  /* img */
-  .s1-d {
-    grid-column: 2/3;
-    grid-row: 2/3;
-  }
-  .shut {
-    text-align: center;
-  }
-  img {
-    width: 45%;
-  }
-  
-  /* phrase */
-  .s1-f {
-  grid-column: 1/4;
-  }
-  
-  section#section-one .grid {
-      display: grid;
-      grid-template-columns: 1fr 1.5fr 1fr;
-      grid-template-rows: [profile-title]0.6fr 1fr 0.2fr;
-      margin: 12em;
-    }  
-
-/* section 2 media min 973px */
-section#section-two .grid {
+.container {
+/* general margin  that keeps everything small and align*/
   display: grid;
-  grid-template-columns: 1fr 1.5fr;
-  grid-template-rows: [experiences] 350px [education-title] 0.4fr 1fr 1fr 1fr [space bet edu careers]0.1fr ;
-  margin: 12em;
-  padding-bottom: 100px;
-  } 
-
-  #education-margin {
-    margin-bottom: 40px;
-  }
-  .box, s2-a, e-subtitle,.education {
-    margin-bottom: 40px;
-  }
-
-  /* dandole style a career */
-  .box, s2-a, e-subtitle ,.careers {
-    margin-bottom: 40px;
-  }
-
-  .e-phrase {
-    text-align: center;
-    font-size: 21px;
-    font-weight: lighter;
-  }
-
-  .e-subtitle  {
-    grid-column: 1/3;
-  }
-
-   .divide-e-c {
-    grid-column: 1/3;
-  } 
-
-
-/* section 3 tables media min 973px */
-table {
-  display: none;
+  grid-template-areas: 
+"h"
+"p"
+"e"
+"a"
+"c"
+;
+  grid-template-rows: [header]730px [profile]720px [experiences]1600px [abilities]1020px [contact] 500px ;  
+  grid-template-columns: 1fr ; 
+  grid-gap: 10px;
+  /* background-color: gray; */
+  justify-content: center;
+  align-content: center;
 }
 
-/* section abilities para crear bkacgorund */
+/* titulo vive dentro del general container 
+y se alinea con nested cumpliando con las mismas divisiones de columnas.
+*/
+
+.header {
+  grid-area: h;
+  display: grid;
+/* grid-template-rows: 40px; */
+  grid-template-columns: 1fr;
+  background-color: #000000;
+  justify-content: center;
+  align-content: center;
+  padding: 30px;
+  /* background-image: radial-gradient(white, #cddd9c);
+  background-color: #cddd9c;  */
 }
 
-/* end media */
+.hr-header{
+margin-top: 15px;
+margin-bottom: 20px;
+text-align: center;
+margin-right: 300px;
+margin-left: 300px;
+opacity: 35%;
+}
 
-  .e-title {
+.header-title {
+  color: white;
+  /* color: #4b8e8d; */
+  font-size: 24px;
+  text-align: center;
+  font-family: 'open sans';
+}
+
+.header-p {
+  font-size: 24px;
+  text-align: center;
+  color: gray;
+  opacity: 50%;
+}
+
+
+/* ihpone X resolution  no esta funcionando*/
+@media only screen and (max-width: 375px) {
+  .container {
+    /* general margin  that keeps everything small and align*/
+      display: grid;
+      grid-template-areas: 
+    "h"
+    "p"
+    "e"
+    "a"
+    "c"
+    ;
+      grid-template-rows: [header]730px [profile]720px [experiences]1600px [abilities]1020px [contact] 500px ;  
+      grid-template-columns: auto ; 
+      grid-gap: 10px;
+      /* background-color: gray; */
+      justify-content: center;
+      align-content: center;
+    }
+
+
+    .menu-wrapper {
+      display: none;
+    }
+
+    /* no fuciona no estoy seguro porque */
+  /* .header-title {
+    font-size: 14px;
     text-align: center;
-    font-size: 54px;
-    margin: 0;
-    padding: 0;
-    margin-top: 150px;
   }
-
-   /* titulo de abilities  tratando de eliminar margen superior */
-  .a-title {
+  .header-p {
+    font-size: 14px;
     text-align: center;
-    font-size: 54px;
-    margin: 0;
-    padding: 0;
+  } */
+}
+
+/* editando el titulo en general */
+@media only screen and (max-width: 878px) {
+  .hr-header {
+   margin-right: 200px;
+   margin-left: 200px;
   }
+}
+@media only screen and (max-width: 1078px) {
+   .hr-header {
+    margin-right: 200px;
+    margin-left: 200px;
+   }
+ }
 
-  .e-subtitle{
-    font-size: 30px;
-    padding-bottom: 12px;
-    font-weight: 200;
-    color: #4b8c8d;
-  }
+/* 562x530  sub title reducir tamano. */
+@media only screen and (max-width: 700px) {
+  .header-title {
+     font-size: 24px;
+   }
+   .header-p {
+     font-size: 20px;
+   }
 
-  .university {
-    font-weight: bold;
-  }
-  .bachelor {
-    font-weight: bold;
-  }
-   
-  .e-description {
-    line-height: 25px;
-  }
+   .hr-header {
+    margin-right: 200px;
+    margin-left: 200px;
+   }
+ }
 
-  .box, .s2-a {
-padding-bottom: 2px;
-  }
+ /* QUERIES OARA PROFILE */
 
-  .box, .s2-b {
-    padding-top: 2px;
-    /* padding: 0; */
-  }
+ @media only screen and (max-width: 600px) {
+.profile {
+/* no logramos que nada funcionara aqui */
+}
 
-  .location {
-    color: #4b8c8d;
-  }
+}
 
-  .date {
-    color: #4b8c8d;
-  }
+  /* section 2 profile  */
+.profile {
+  grid-area: p;
+  display: grid;
+  grid-template-columns: 266.66px 266.66px 266.66px;
+  align-items: start;
+  /* Este es el estos dos a continuacion deberia mantener el contenido centrado en toda la pagina en conjutno con la sotras secciones */
+  justify-content: center;
+  /* Aqui porque estamos alineando el cuadrado en el container. no cada uno de los elementos asi puede empezar */
+  align-content: center; 
+  padding: 30px;
+  /* margin-bottom: 120px; */
+}
 
-  .fa fa-twitter {
-    color: white;
-  }
+.profile-sub {
+  grid-column: 1/3;
+}
 
-  @media only screen and (max-width: 600px) {
-    .e-description {
-     display: none;
-    }   
-    .e-title {
-      text-align: center;
-    }
-    .careers {
-      margin-bottom: 20px;
-      margin-top: 20px;
-    }
+.sub-title-profile {
+  font-size: 18px;
+}
 
-    /* Este margen amplifica todo */
-    .e-phrase {
-      text-align: center;
-      margin: 2em;
-    }
+.sub-title-profile-3 {
+  margin-top: 40px;
+  font-size:18px;
+  font-weight: bold;
+  line-height: 25px;
+}
 
-    /* sub-titulo de abilities */
-     .a-phrase {
-      text-align: center;
-      margin: 2em;
-      font-size: 120px;
-    }
-
-    .divide-e-c {
-      max-width: 450px;
-    }
-  }
-
+.profile-title {
   
+  margin-bottom: 20px;
+  grid-column : 1 / 4;  
+  padding: 7px;
+  font-size: 54px;
+  /* utiilzando text align podemos mantener la estructura del recuadro. */
+  text-align: center;
+  font-weight: lighter;
+  }
+
+/* .grid-p {
+  padding: 20px;
+  background-color: white;
+} */
+
+#details-title {
+  font-weight: lighter;
+  font-size: 24px;
+  text-align: left;
+  margin-bottom: 10px;
+  margin-left: 35px;
+}
+
+/* Details styling */
+.sub-title-size {
+  font-size: 15px;
+  text-align: left;
+  line-height: 24px;
+  margin-left: 35px;
+}
+
+/* par ala mayoria de los subtitulos */
+.all-sub-titles {
+  font-weight: lighter;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+
+/* each section  prhase*/
+.phrase {
+  font-size: 18px;
+  text-align: center;
+  line-height: 35px;
+}
+
+/* raya ubicada en demas secciones de la pagina */
+.hr-ex {
+  grid-column : 1 / 3;
+  margin-top: 20px;  
+  margin-bottom: 40px;
+  opacity: 50%;
+}
+
+/* raya que esta ubicada en habilidades */
+.hr-abilities {
+  grid-column : 1 / 5;
+  margin-top: 20px;  
+  margin-bottom: 10px;
+  opacity: 50%;
+  
+}
+
+.Abilities-title {
+  margin-bottom: 20px; 
+  color: #4b8e8d;
+}
+.e-wrapper {
+  grid-area: e; 
+  display: grid;
+  grid-template-columns: 400px 400px ;
+  background-color:#f3efe0;
+  align-items: start;
+  justify-content: center;
+  align-content: start; 
+  padding: 30px;
+}
+
+
+/* las medidas de todos los titulos de cada secion: abilities, expreinces etc.  */
+.section-title {
+  margin-top: 40px;
+  grid-column : 1 / 3;  
+  padding: 7px;
+  font-size: 54px;
+  /* utiilzando text align podemos mantener la estructura del recuadro. */
+  text-align: center;
+  font-weight: lighter;
+  line-height: 60px;
+  /* margin-bottom: 200px; */
+}
+
+.profile-title {
+  /* margin-top: 15px; */
+  grid-column : 1 / 4;  
+  font-size: 54px;
+  /* utiilzando text align podemos mantener la estructura del recuadro. */
+  text-align: center;
+  font-weight: lighter;
+}
+
+.hr-pro{
+  opacity: 50%;
+  grid-column : 1 / 4;
+  margin-top: 20px;  
+  margin-bottom: 40px;  
+}
+
+img {
+  width: 200px;
+  height: 200px;
+}
+
+.profile-img {
+  text-align: center;
+}
+
+.about-text {
+font-size: 15px;
+color: black;
+}
+.experiences-title  {
+  margin-bottom: 20px;
+  color: #4b8e8d
+}
+
+
+/* Start style expreinces*/
+
+/* wrapper que agarra cada educacion y la separa */
+.e-left-col {
+  text-align: left;
+  margin-bottom: 30px;
+}
+
+.right-col-subtitle {
+  margin-bottom: 10px;
+  font-size: 15px;
+  
+}
+
+.left-col-subtitle {
+  margin-bottom: 10px;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.right-col-p {
+  font-size: 14px;
+  line-height: 25px;
+  margin-bottom: 10px;
+}
+
+.e-left-col-title {
+  font-weight: lighter;
+  font-size: 24px;
+  color: #4b8e8d
+}
+
+/* end style expreinces*/
+
+/* abilities wrapper */
+
+.a-wrapper {
+  grid-area: a; 
+  display: grid;
+  grid-template-columns: 200px 200px 200px 200px ;
+  align-items: start;
+  justify-content: center;
+  align-content: start; 
+  padding: 30px;
+  line-height: 30px; 
+}
+
+#a-title {
+  margin-bottom: 20px;
+  grid-column : 1 / 5;  
+  padding: 7px;
+  font-size: 54px;
+  text-align: center;
+  font-weight: lighter;
+}
+
+/* Sub-titulos - experiences */
+.edu-sub-titles {
+  padding: 0;
+  margin-left: 0;
+  margin-bottom: 30px;
+  grid-column : 1 / 3;  
+  font-size: 24px;
+  text-align: left;
+  font-weight: lighter;
+  color: #4b8e8d;
+}
+
+#a-sub-title {
+  padding: 0;
+  margin-left: 0;
+  margin-bottom: 3px;
+  grid-column : 1 / 5;  
+  font-size: 24px;
+  text-align: left;
+  font-weight: lighter;
+  color: #4b8e8d
+}
+
+/* alineacion columnas skills */
+.a-col-right {
+  text-align: right;
+}
+
+/* el que toca la columna central */
+.a-col-right-first{
+  /* margin-right: 50px; */
+  text-align: right;
+  
+}
+
+.a-col-left {
+  text-align: left;
+  margin-left: 40px;
+}
+
+
+.c-wrapper {  
+  color: white;
+  grid-area: c; 
+  display: grid;
+  grid-template-rows: 100px 100px 100px;
+  grid-template-columns: 390px 160px 280px ;
+  justify-content: center;
+  align-items: center;
+  padding-top: 100px;
+  line-height: 30px; 
+  background-color:#000000;
+  /* padding-bottom: 480px; */
+}
+
+/* creo que lcoation icon */
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+
+#c-title {
+  /* margin-top: 60px; */
+  background-color: #000000;
+  grid-column : 1 / 2;  
+  grid-row: 1 / 4; 
+  font-size: 54px;
+  text-align: left;
+  font-weight: lighter;
+  line-height: 55px;
+}
+
+.c-sub-title {
+  /* margin-top: 60px; */
+  grid-column : 1 / 4;  
+  font-size: 24px;
+  text-align: left;
+  font-weight: lighter;
+}
+
+.letstalk {
+  letter-spacing: 3px;
+}
+
+.icoLinkedin {
+color: white;
+padding:0;
+margin: 0;
+grid-column : 1 / 4;  
+justify-content: left;
+}
+
+/* este es el fa de twitter */
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  color:white;
+}
+
+.fa-envelope {  
+  border-radius: 50%;
+  color:white;
+  width: 14%;
+  padding: 23px;
+  font-size:24px;
+  background-color: #4b8e8d;
+  margin-bottom: 20px;
+}
+
+.description-icons-footer {
+  padding-bottom: 30px;
+}
+
+.fa-twitter {
+  background-color: #4b8e8d;
+  color: white;
+  margin-left: 0;
+  margin-bottom: 20px;
+}
+
+.fa-linkedin {
+  background-color: #4b8e8d;
+  color: white;
+}
+
+/* .icon-description {
+  margin-top: 20px;
+} */
+
+
+span {
+  font-size:14px;
+}
+
+
+/* ANIMACION DE LA FLECHA */
+/* ANIMACION DE LA FLECHA */
 /* ANIMACION DE LA FLECHA */
 
 @bg: #2d2d37; // Dark blue
@@ -747,8 +609,3 @@ a { color:#4b8e8d; text-decoration: none; }
     transform: translateY(-15px);
   }
 }
-  
-  
-
-
-  
